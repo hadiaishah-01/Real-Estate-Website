@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNest Realty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">PrimeNest Realty </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        
+        <!--button class="dark-btn" onclick="toggleDarkMode()"><i class="fas fa-moon"></i></button-->
+        <button id="dark-btn">🌙</button>
+        <nav>
+            <ul id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>Contact Us</h1>
+            <p>
+                We'd love to hear from you. Reach out to us today.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="info-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Office Address</h3>
+                    <p>
+                        25 Ring Road, Ibadan, Oyo State, Nigeria.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>09135824838</p>
+                    <p>09052846294</p>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@primenestrealty.com</p>
+                    <p>support@primenestrealty.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="subject">
+                <textarea rows="7" placeholder="Your Message" required></textarea>
+                <button class="btn"> Send Message </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps?q=Ibadan&output=embed" loading="lazy" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section class="business-hours">
+        <div class="container">
+            <h2>Business Hours</h2>
+            <ul>
+                <li>Monday - Friday : 8:00 AM - 5:00 PM</li>
+                <li>Saturday : 9:00 AM - 2:00 PM</li>
+                <li>Sunday : Closed</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="social-section">
+        <div class="container">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Do I need an appointment?</h3>
+                <p>Appointments are recommended but walk-ins are welcome during business hours.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I inspect a property before payment?</h3>
+                <p>Yes. Property inspection are arranged before any payment is made.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Let's Help You Find Your Dream Property</h2>
+            <p>Speak with our experienced team today.</p>
+            <a href="properties.html" class="btn">View Details</a>
+            <p id="successMessage"></p>
+        </div>
+    </section>
+    <footer>
+            <div class="footer-container">
+                <div>
+                    <h3>PrimeNest Realty</h3>
+                    <p>Helping individuals and businesses find premiun properties across Nigeria.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p>
+                        <a href="https://maps.google.com/?q=Ring+Road,+Ibadan,+Nigeria" target="_blank">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Ring Road, Ibadan, Nigeria
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:+2349135824838">
+                            <i class="fa-solid fa-phone"></i>
+                            +2349135824838
+                        </a>
+                    </p>
+                    <p>
+                        <a href="mailto:info@hadiaishah02@gmail.com">
+                            <i class="fa-solid fa-envelope"></i>
+                            info@primenestrealty.com
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">
+            &copy; 2026 PrimeNest Realty. All Rights Reserved.  
+            </p>
+    </footer>
+
+    <script>
+        function toggleMenu(){
+        document.getElementById("navLinks").classList.toggle("active");
+        }
+
+        /*function toggleDarkMode(){
+        document.body.classList.toggle("dark-mode");
+        }*/
+       const btn = document.getElementById("dark-btn");
+        btn.onclick = function(){
+        document.body.classList.toggle("dark");
+
+        btn.innerHTML = 
+        document.body.classList.contains("dark")
+        ? "☀️"
+        :"🌙";
+        }
+
+        const form =
+        document.querySelector(".contact-form");
+        const message =
+        document.getElementById("successMessage");
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+            message.innerHTML="Your message has been sent successfully!";
+            message.style.color="green";
+            form.reset();
+        });
+    </script>
+</body>
+</html>
