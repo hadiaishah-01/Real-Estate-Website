@@ -12,7 +12,9 @@ btn.onclick = function(){
     :"🌙";
 }
 
-document.getElementById("myForm").addEventListener("submit", function(event) {
+const myForm = document.getElementById("myForm");
+if (myForm) {
+    myForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
     // Clear previous errors
@@ -74,9 +76,9 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     }
 
     if (valid) {
-        const alertMessage =
-        document.getElementById("alertMessage");
+        const alertMessage = document.getElementById("alertMessage");
         alertMessage.style.color = "green";
         alertMessage.textContent = "Your message has been sent successfully!";
     }
-});
+    });
+}
