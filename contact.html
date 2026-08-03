@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrimeNest Realty</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,7 +47,11 @@
                     <i class="fa-solid fa-phone"></i>
                     <h3>Phone</h3>
                     <p>09135824838</p>
-                    <p>09052846294</p>
+                    <p>08066558906</p>
+                    <p>09024716395</p>
+                    <p>09018722746</p>
+                    
+                            
                 </div>
                 <div class="info-card">
                     <i class="fa-solid fa-envelope"></i>
@@ -62,12 +66,18 @@
     <section class="contact-form-section">
         <div class="container">
             <h2>Send Us a Message</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="text" placeholder="subject">
-                <textarea rows="7" placeholder="Your Message" required></textarea>
-                <button class="btn"> Send Message </button>
+            <div class="contact-form">
+            <form id="myForm">
+                <input type="text" id="name" placeholder="Full Name">
+                <div id="nameError" class="error"></div>
+                <input type="text" id="email" placeholder="Email">
+                <div id="emailError" class="error"></div>
+                <input type="text" id="subject" placeholder="Subject">
+                <div id="subjectError" class="error"></div>
+                <textarea rows="6" id="message" placeholder="Your Message"></textarea>
+                <div id="messageError" class="error"></div>
+                <button class="btn">Send Message</button>
+                <p id="alertMessage"></p>
             </form>
         </div>
     </section>
@@ -130,7 +140,6 @@
             <h2>Let's Help You Find Your Dream Property</h2>
             <p>Speak with our experienced team today.</p>
             <a href="properties.html" class="btn">View Details</a>
-            <p id="successMessage"></p>
         </div>
     </section>
     <footer>
@@ -160,7 +169,13 @@
                     <p>
                         <a href="tel:+2349135824838">
                             <i class="fa-solid fa-phone"></i>
-                            +2349135824838
+                            +2349135824838 <br>
+                            <i class="fa-solid fa-phone"></i>
+                            +2348066558906 <br>
+                            <i class="fa-solid fa-phone"></i>
+                            +2349024716395 <br>
+                            <i class="fa-solid fa-phone"></i>
+                            +2349018722746
                         </a>
                     </p>
                     <p>
@@ -194,34 +209,6 @@
             </p>
     </footer>
 
-    <script>
-        function toggleMenu(){
-        document.getElementById("navLinks").classList.toggle("active");
-        }
-
-        /*function toggleDarkMode(){
-        document.body.classList.toggle("dark-mode");
-        }*/
-       const btn = document.getElementById("dark-btn");
-        btn.onclick = function(){
-        document.body.classList.toggle("dark");
-
-        btn.innerHTML = 
-        document.body.classList.contains("dark")
-        ? "☀️"
-        :"🌙";
-        }
-
-        const form =
-        document.querySelector(".contact-form");
-        const message =
-        document.getElementById("successMessage");
-        form.addEventListener("submit", function(e){
-            e.preventDefault();
-            message.innerHTML="Your message has been sent successfully!";
-            message.style.color="green";
-            form.reset();
-        });
-    </script>
+    <script src="Real.js"></script>
 </body>
 </html>
