@@ -1,288 +1,312 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PrimeNest Realty</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">PrimeNest Realty </div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        
-        <!--button class="dark-btn" onclick="toggleDarkMode()">🌙</button>-->
-        <button id="dark-btn">🌙</button>
-        <nav>
-            <ul id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="properties.html">Properties</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="logo">PrimeNest Realty</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+      <!--button class="dark-btn" onclick="toggleDarkMode()">🌙</button>-->
+      <button id="dark-btn">🌙</button>
+      <nav>
+        <ul id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1> Find Your Dream Property Today</h1>
-            <p>Discover luxury homes, modern apartments, commercial buildings, and affordable land across Nigeria.</p>
-            <div class="hero-buttons">
-                <a href="properties.html" class="btn">Browse Properties</a>
-                <a href="contact.html" class="btn-outline">Contact Us</a>
-            </div>
+      <div class="hero-content">
+        <h1>Find Your Dream Property Today</h1>
+        <p>
+          Discover luxury homes, modern apartments, commercial buildings, and
+          affordable land across Nigeria.
+        </p>
+        <div class="hero-buttons">
+          <a href="properties.html" class="btn">Browse Properties</a>
+          <a href="contact.html" class="btn-outline">Contact Us</a>
         </div>
+      </div>
     </section>
 
     <section class="search-section">
-        <div class="search-container">
-            <h2>Find Your Perfect Property</h2>
-            <p>Search from our verified listings across Nigeria.</p>
-            <form class="search-form">
-                <input type="text" placeholder="Enter Location">
-                <select>
-                    <option>Select Property Type</option>
-                    <option>House</option>
-                    <option>Apartment</option>
-                    <option>Land</option>
-                    <option>Office Space</option>
-                </select>
+      <div class="search-container">
+        <h2>Find Your Perfect Property</h2>
+        <p>Search from our verified listings across Nigeria.</p>
+        <form class="search-form">
+          <input type="text" placeholder="Enter Location" />
+          <select>
+            <option>Select Property Type</option>
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Land</option>
+            <option>Office Space</option>
+          </select>
 
-                <select>
-                    <option>Select Budget</option>
-                    <option>10 Million</option>
-                    <option>20 Million</option>
-                    <option>50 Million</option>
-                    <option>100 Million</option>
-                </select>
-                <button type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                     <a href="properties.html" class="btn">Search</a>
-                </button>
-            </form>
-        </div>
+          <select>
+            <option>Select Budget</option>
+            <option>10 Million</option>
+            <option>20 Million</option>
+            <option>50 Million</option>
+            <option>100 Million</option>
+          </select>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="properties.html" class="btn">Search</a>
+          </button>
+        </form>
+      </div>
     </section>
 
     <section class="featured-properties">
-        <div class="container">
-            <div class="section-title">
-                <h2>Featured Properties</h2>
-                <p>Explore some of our verified premium properties.</p>
-            </div>
-            <div class="property-grid">
-                <div class="property-card">
-                    <img src="images/luxury-duplex.jpg" alt="Luxury Duplex">
-                    <div class="property-info">
-                        <span class="property-tag">For Sale</span>
-                        <h3>Luxury Duplex</h3>
-                        <p><i class="fa-solid fa-location-dot"></i> Lekki, Lagos</p>
-                        <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 6 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
-                            <span><i class="fa-solid fa-car"></i> 2 Garage</span>
-                        </div>
-                        <h4>#250,000,000</h4>
-                        <a href="properties.html" class="btn">View Details</a>
-                    </div>
-                </div>
-                <div class="property-card">
-                    <img src="images/gallery-exterior-1.jpg" alt="Modern Apartment">
-                    <div class="property-info">
-                        <span class="property-tag">For Rent</span>
-                        <h3>Modern Apartment</h3>
-                        <p><i class="fa-solid fa-location-dot"></i> Lokogoma, Abuja</p>
-                        <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
-                            <span><i class="fa-solid fa-car"></i> 1 Garage</span>
-                        </div>
-                        <h4>#8,500,000/Year</h4>
-                        <a href="properties.html" class="btn">View Details</a>
-                    </div>
-                </div>
-                <div class="property-card">
-                    <img src="images/luxury-bungalow.jpg" alt="Luxury Bungalow">
-                    <div class="property-info">
-                        <span class="property-tag">Featured</span>
-                        <h3>Luxury Detached duplex</h3>
-                        <p><i class="fa-solid fa-location-dot"></i> Maitama, Abuja</p>
-                        <div class="property-details">
-                            <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
-                            <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
-                            <span><i class="fa-solid fa-car"></i> 2 Garage</span>
-                        </div>
-                        <h4>#95,000,000</h4>
-                        <a href="properties.html" class="btn">View Details</a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured Properties</h2>
+          <p>Explore some of our verified premium properties.</p>
         </div>
+        <div class="property-grid">
+          <div class="property-card">
+            <img src="images/luxury-duplex.jpg" alt="Luxury Duplex" />
+            <div class="property-info">
+              <span class="property-tag">For Sale</span>
+              <h3>Luxury Duplex</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Lekki, Lagos</p>
+              <div class="property-details">
+                <span><i class="fa-solid fa-bed"></i> 6 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 5 Baths</span>
+                <span><i class="fa-solid fa-car"></i> 2 Garage</span>
+              </div>
+              <h4>#250,000,000</h4>
+              <a href="properties.html" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="property-card">
+            <img src="images/gallery-exterior-1.jpg" alt="Modern Apartment" />
+            <div class="property-info">
+              <span class="property-tag">For Rent</span>
+              <h3>Modern Apartment</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Lokogoma, Abuja</p>
+              <div class="property-details">
+                <span><i class="fa-solid fa-bed"></i> 3 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 2 Baths</span>
+                <span><i class="fa-solid fa-car"></i> 1 Garage</span>
+              </div>
+              <h4>#8,500,000/Year</h4>
+              <a href="properties.html" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="property-card">
+            <img src="images/luxury-bungalow.jpg" alt="Luxury Bungalow" />
+            <div class="property-info">
+              <span class="property-tag">Featured</span>
+              <h3>Luxury Detached duplex</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Maitama, Abuja</p>
+              <div class="property-details">
+                <span><i class="fa-solid fa-bed"></i> 4 Beds</span>
+                <span><i class="fa-solid fa-bath"></i> 3 Baths</span>
+                <span><i class="fa-solid fa-car"></i> 2 Garage</span>
+              </div>
+              <h4>#95,000,000</h4>
+              <a href="properties.html" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="why-us">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Choose PrimeNest Realty?</h2>
-            </div>
-            <div class="why-grid">
-                <div class="why-card">
-                    <i class="fa-solid fa-house-circle-check"></i>
-                    <h3>Verified Properties</h3>
-                    <p>Every property is carefully inspected before listing.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fa-solid fa-user-tie"></i>
-                    <h3>Professional Agents</h3>
-                    <p>Experienced consultants to guide your purchase.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <h3>Secure Transactions</h3>
-                    <p>Your investment is handled safely and transparently.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fa-solid fa-headset"></i>
-                    <h3>24/7 Support</h3>
-                    <p>We are available whenever you need assistance.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Choose PrimeNest Realty?</h2>
         </div>
+        <div class="why-grid">
+          <div class="why-card">
+            <i class="fa-solid fa-house-circle-check"></i>
+            <h3>Verified Properties</h3>
+            <p>Every property is carefully inspected before listing.</p>
+          </div>
+          <div class="why-card">
+            <i class="fa-solid fa-user-tie"></i>
+            <h3>Professional Agents</h3>
+            <p>Experienced consultants to guide your purchase.</p>
+          </div>
+          <div class="why-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Secure Transactions</h3>
+            <p>Your investment is handled safely and transparently.</p>
+          </div>
+          <div class="why-card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>We are available whenever you need assistance.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="categories">
-        <div class="container">
-            <div class="section-title">
-                <h2>Browse by Category</h2>
-            </div>
-            <div class="category-grid">
-                <div class="category-card">
-                    <i class="fa-solid fa-house"></i>
-                    <h3>Luxury Homes</h3>
-                </div>
-                <div class="category-card">
-                    <i class="fa-solid fa-building"></i>
-                    <h3>Apartments</h3>
-                </div>
-                <div class="category-card">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <h3>Lands</h3>
-                </div>
-                <div class="category-card">
-                    <i class="fa-solid fa-city"></i>
-                    <h3>Commercial Buildings</h3>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Browse by Category</h2>
         </div>
+        <div class="category-grid">
+          <div class="category-card">
+            <i class="fa-solid fa-house"></i>
+            <h3>Luxury Homes</h3>
+          </div>
+          <div class="category-card">
+            <i class="fa-solid fa-building"></i>
+            <h3>Apartments</h3>
+          </div>
+          <div class="category-card">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h3>Lands</h3>
+          </div>
+          <div class="category-card">
+            <i class="fa-solid fa-city"></i>
+            <h3>Commercial Buildings</h3>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>What Our Clients Say</h2>
-                <p>Trusted by hundreds of satisfied property owners and investors.</p>
-            </div>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <img src="images/testimonial-david.jpg" alt="Client">
-                    <p>"PrimeNest Realty made buying our first home simple and stress-free. Their team was professional from start to finish."</p>
-                    ⭐⭐⭐⭐⭐
-                    <h3>Sarah Johnson</h3>
-                    <span>Home Owner</span>
-                </div>
-                <div class="testimonial-card">
-                    <img src="images/testimonial-david.jpg" alt="Client">
-                    <p>"I found a perfect investment property within two weeks. I highly recommend PrimeNest Realty."</p>
-                    ⭐⭐⭐⭐⭐
-                    <h3>David Bello</h3>
-                    <span>Property Investor</span>
-                </div>
-                <div class="testimonial-card">
-                    <img src="images/testimonial-grace.jpg" alt="Client">
-                    <p>"Excellent customer service and verified properties. Definitely one of the best real estate companies."</p>
-                    ⭐⭐⭐⭐⭐
-                    <h3>Grace Musa</h3>
-                    <span>Business Owner</span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our Clients Say</h2>
+          <p>Trusted by hundreds of satisfied property owners and investors.</p>
         </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <img src="images/testimonial-david.jpg" alt="Client" />
+            <p>
+              "PrimeNest Realty made buying our first home simple and
+              stress-free. Their team was professional from start to finish."
+            </p>
+            ⭐⭐⭐⭐⭐
+            <h3>Sarah Johnson</h3>
+            <span>Home Owner</span>
+          </div>
+          <div class="testimonial-card">
+            <img src="images/testimonial-david.jpg" alt="Client" />
+            <p>
+              "I found a perfect investment property within two weeks. I highly
+              recommend PrimeNest Realty."
+            </p>
+            ⭐⭐⭐⭐⭐
+            <h3>David Bello</h3>
+            <span>Property Investor</span>
+          </div>
+          <div class="testimonial-card">
+            <img src="images/testimonial-grace.jpg" alt="Client" />
+            <p>
+              "Excellent customer service and verified properties. Definitely
+              one of the best real estate companies."
+            </p>
+            ⭐⭐⭐⭐⭐
+            <h3>Grace Musa</h3>
+            <span>Business Owner</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="cta">
-        <div class="container">
-            <h2>Reality to Find Your Dream Property?</h2>
-            <p>Browse our verified listings or speak with one of our experienced property consultants today.</p>
-            <a href="properties.html" class="btn">Browse Properties</a>
-        </div>
+      <div class="container">
+        <h2>Reality to Find Your Dream Property?</h2>
+        <p>
+          Browse our verified listings or speak with one of our experienced
+          property consultants today.
+        </p>
+        <a href="properties.html" class="btn">Browse Properties</a>
+      </div>
     </section>
     <footer>
-        <div class="footer-container">
-            <div>
-                <h3>PrimeNest Realty</h3>
-                <p>Helping individuals and businesses find premiun properties across Nigeria.</p>
-            </div>
-            <div>
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="properties.html">Properties</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Contact</h3>
-                <p>
-                    <a href="https://maps.google.com/?q=Ring+Road,+Ibadan,+Nigeria" target="_blank">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Ring Road, Ibadan, Nigeria
-                    </a>
-                </p>
-                <p>
-                    <a href="tel:+2349135824838">
-                            <i class="fa-solid fa-phone"></i>
-                            +2349135824838 <br>
-                            <i class="fa-solid fa-phone"></i>
-                            +2348066558906 <br>
-                            <i class="fa-solid fa-phone"></i>
-                            +2349024716395 <br>
-                            <i class="fa-solid fa-phone"></i>
-                            +2349018722746
-                        </a>
-                </p>
-                <p>
-                    <a href="mailto:info@hadiaishah02@gmail.com">
-                        <i class="fa-solid fa-envelope"></i>
-                        info@primenestrealty.com
-                    </a>
-                </p>
-            </div>
-            <div>
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://instagram.com" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://x.com" target="_blank">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
+      <div class="footer-container">
+        <div>
+          <h3>PrimeNest Realty</h3>
+          <p>
+            Helping individuals and businesses find premiun properties across
+            Nigeria.
+          </p>
         </div>
-        <hr>
-        <p class="copyright">
-           &copy; 2026 PrimeNest Realty. All Rights Reserved.  
-        </p>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>
+            <a
+              href="https://maps.google.com/?q=Ring+Road,+Ibadan,+Nigeria"
+              target="_blank"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              Ring Road, Ibadan, Nigeria
+            </a>
+          </p>
+          <p>
+            <a href="tel:+2349135824838">
+              <i class="fa-solid fa-phone"></i>
+              +2349135824838 <br />
+              <i class="fa-solid fa-phone"></i>
+              +2348066558906 <br />
+              <i class="fa-solid fa-phone"></i>
+              +2349024716395 <br />
+              <i class="fa-solid fa-phone"></i>
+              +2349018722746
+            </a>
+          </p>
+          <p>
+            <a href="mailto:info@hadiaishah02@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              info@primenestrealty.com
+            </a>
+          </p>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://x.com" target="_blank">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">
+        &copy; 2026 PrimeNest Realty. All Rights Reserved.
+      </p>
     </footer>
 
     <script src="Real.js"></script>
-</body>
+  </body>
 </html>
