@@ -79,37 +79,64 @@ nav a:hover {
     color:#fff;
 }*/
 
-.dark {
+body.dark {
   background: #121212;
-  color: white;
+  color: #e0e0e0;
 }
 
 body.dark header,
-body.dark section,
 body.dark footer,
-body.dark .property-card,
-body.dark .about,
-body.dark .contact,
-body.dark .why-card {
-  background: #1e1e1e;
-  color: white;
+body.dark nav ul {
+  background: #1a1a1a;
+  color: #ffffff;
 }
 
-body.dark .why-card h3 p {
-  color: white;
+body.dark .search-section,
+body.dark .about-company,
+body.dark .team,
+body.dark .faq,
+body.dark .cta {
+  background: #121212;
 }
+
+body.dark .property-card,
+body.dark .why-card,
+body.dark .category-card,
+body.dark .testimonial-card,
+body.dark .info-card,
+body.dark .team-card,
+body.dark .value-card,
+body.dark .faq-item {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark .container h2,
+body.dark .section-title h2,
+body.dark .about h2,
+body.dark .faq-item h3,
+body.dark .cta h2 {
+  color: #ffffff;
+}
+
+body.dark .container p,
+body.dark .about p,
+body.dark .team-card p,
+body.dark .testimonial-card p {
+  color: #cccccc;
+}
+
 body.dark input,
+body.dark select,
 body.dark textarea {
   background: #2a2a2a;
   color: white;
-  border: 1px solid #666;
-}
-
-body.dark button {
-  color: white;
-}
-body.dark a {
-  color: white;
+  border: 1px solid #444;
 }
 
 #dark-btn {
